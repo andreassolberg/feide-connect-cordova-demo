@@ -1,0 +1,26 @@
+{
+  "name": "feideconnect-js-demo",
+  "version": "0.0.1",
+  "description": "A Javascript app to demo Feide Connect integration",
+  "main": "index.html",
+  "authors": [
+    "Andreas Åkre Solberg"
+  ],
+  "license": "MIT",
+  "homepage": "http://feideconnect.uninett.no",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.*",
+    "uninett-theme": "*",
+    "bootstrap": "*",
+    "jso": "*",
+    "chartjs": "~1.0.1"
+  }
+}

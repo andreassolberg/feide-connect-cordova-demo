@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="Andreas Åkre Solberg">
+
+	<title>Eksamensresultater</title>
+
+	<!-- <link href="bower_components/uninett-theme/ico/favicon.png" rel="shortcut icon" > -->
+	<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- <link href="bower_components/uninett-theme/css/uninett.css" rel="stylesheet"> -->
+
+	<style type="text/css" media="screen">
+		
+	</style>
+	<link href="css/style.css" rel="stylesheet"></link>
+
+    <script type="text/javascript">
+    function handleOpenURL(url) {
+        window._handleOpenURL = url;
+    }
+    </script>
+	<script type="text/javascript" src="cordova.js"></script>
+
+	<!-- Bootstrap core JavaScript --> 
+	<!-- Placed at the end of the document so the pages load faster --> 
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script> 
+	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script> 
+
+	<!-- <script type="text/javascript" src="bower_components/chartjs/Chart.min.js"></script>  -->
+	<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.1-beta.2/Chart.min.js"></script> -->
+	<script src="bower_components/chartjs/Chart.min.js"></script>
+
+	<script src="bower_components/requirejs/require.js"></script>
+
+	<script type="text/javascript">
+
+		function onDeviceReady() {
+			require(['js/main-dev'], function(main) {
+				var app = new main.App();
+				app.run();
+			});
+		}
+		document.addEventListener("deviceready",onDeviceReady,false);
+
+	</script>
+
+	<!-- 	<script type="text/javascript" src="js/main.js"></script> -->
+
+</head>
+
+<body>
+
+
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+<!-- 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> -->
+				<!-- <a class="navbar-brand" href="#"><img src="bower_components/uninett-theme/images/UNINETT_logo.svg" alt="Uninett logo" type="image/svg+xml"></a> -->
+				
+			</div>
+			<div class="navbar-department">
+				<div class="department">Eksamensresultater</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	<div id="" class="container">
+		
+		<!-- Nav tabs -->
+<!-- 		<ul class="nav nav-tabs gutter" role="tablist">
+			<li class="active"><a href="#res" role="tab" data-toggle="tab">Eksamensresultater</a></li>
+			<li><a href="#api" role="tab" data-toggle="tab">API Output</a></li>
+			<li><a href="#dev" role="tab" data-toggle="tab">Developer details</a></li>
+		</ul> -->
+
+		<!-- Tab panes -->
+		<div class="tab-content uninett-padded uninett-color-white" style="margin-top: 100px">
+			<div class="tab-pane active" id="res">
+
+				<table id="res" class="uninett-color-white table table-striped">
+
+					<thead>
+						<td>Fag</td>
+						<td>Karakter</td>
+						<td>Fordeling</td>
+					</thead>
+					<tbody id="resTableBody">
+
+					</tbody>
+				</table>
+
+
+			</div>
+			<div class="tab-pane" id="api">
+
+				<div class="row gutter" id="urlcontainer" style=" none">
+					<div class="col-lg-12 "> 
+						<div id="out2" class="uninett-color-white ">
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+			</div>
+			<div class="tab-pane" id="dev">
+
+
+				<div class="row gutter" id="urlcontainer" style=" none">
+					<div class="col-lg-12 "> 
+						<div id="tokenOut" class="uninett-color-white uninett-padded">
+						</div>
+					</div>
+				</div>
+
+				<div class="row gutter" id="urlcontainer2" style=" none">
+					<div class="col-lg-12 "> 
+						<p>User info</p>
+						<div id="out" class="uninett-color-white uninett-padded">
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+
+
+	</div>
+
+
+
+	<div class="container">
+
+
+
+		<div class="row gutter">
+			<div class="col-lg-12 "> 
+				<!-- Main component for a primary marketing message or call to action -->
+				<div class="uninett-color-white uninett-padded">
+					<p style="margin-bottom: 0px; text-align: center"><a href="http://uninett.no">UNINETT</a> &#9829; OAuth 2.0</p>
+					<p style="margin-bottom: 0px; text-align: center">We hope you find this tool useful. 
+						For comments <a href="mailto:andreas.solberg@uninett.no">contact Andreas Åkre Solberg</a> or 
+						<a target="_blank" href="https://github.com/andreassolberg/httpjs/issues">report issues</a>.</p>
+					<p style="margin-bottom: 0px; text-align: center">Stay tuned. Later additions to this API testing tool may provide tools for OAuth 2.0 and OpenID Connect.</p>
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
+	<!-- /container --> 
+
+
+</body>
+</html>

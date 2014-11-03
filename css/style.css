@@ -1,0 +1,13 @@
+table {
+	border: 1px solid #bbb;
+	border-radius: 10px !important;
+}
+
+table thead td {
+	font-weight: bold;
+	background: #ccc;
+}
+
+td.karakter {
+	font-size: 110%;
+}
