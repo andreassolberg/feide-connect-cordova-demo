@@ -1,5 +1,5 @@
 
-# Feide Connect Javascript klient
+# Feide Connect Cordova Mobile Demo App
 
 
 Sjekk [feide-connect-javascript-demo](https://github.com/andreassolberg/feide-connect-javascript-demo) for mer dokumentasjon.
